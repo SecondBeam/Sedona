@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css";>
+	<title>Sedona</title>
+</head>
+<body>
+	<header class="page-header">
+	<nav class="main-nav">
+		<ul class="main-nav__ul">
+			<li class="main-nav__li"><a href="index.html">Главная</a></li>
+			<li class="main-nav__li"><a href="photo.html">Фото и видео</a></li>
+			<li class="main-nav__li"><a href="form.html">Форма отзыва</a></li>
+			<li class="main-nav__li"><a href="#">HTML Academy</a></li>
+		</ul>
+		<button class="main-nav__close">Закрыть</button>
+		<img src="img/logotyle-mobile.png">
+	</nav>
+	<h1 class="visualy-hidden">Sedona</h1>
+</header>
+	
+	<main class="page-main">
+		<h2>Оставьте свой отзыв</h2>
+		<p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных Вами достопримечательностях</p>
+		<form class="form-review" action="#" method="post">
+			<div class="form-review__cell">
+				<h2>Представьтесь</h2>
+				<label>
+					Имя*:
+					<input class="form-review__full-name" type="text" name="first-name" value="Петр" required>
+				</label>
+				<label>
+					Фамилия*:
+					<input class="form-review__full-name" type="text" name="second-name" value="Иванов" required>
+				</label>
+				<label>
+					Отчество:
+					<input class="form-review__full-name" type="text" name="patronymic" value="Александрович">
+				</label>
+			</div>
+			<div class="form-review__cell">
+				<h2>Контактная информация</h2>
+				<label>Контактный телефон*:</label>
+				<input class="form-review__cont" type="tel" name="tel" value="Введите телефон" required>
+				<label>Электронная почта*:</label>
+				<input class="form-review__cont" type="email" name="mail" value="Введите e-mail" required>
+			</div>
+			<div class="form-review__cell">
+				<h2>Ваше общее впечатление</h2>
+				<label>
+					<input class="form-review__imperession" type="radio" name="Impression" checked>
+					Скорее положительное
+				</label>
+				<label>
+					<input class="form-review__imperession" type="radio" name="Impression">
+					Скорее отрицательное
+				</label>
+				<label>
+					<input class="form-review__imperession" type="radio" name="Impression">
+					Затрудняюсь ответить
+				</label>
+			</div>
+			<div class="form-review__cell">
+				<h2>Посещенные достопримечательности</h2>
+				<label>
+					<input class="form-review__sight" type="checkbox" name="Sight" checked>
+					Мост дьявола
+				</label>
+				<label>
+					<input class="form-review__sight" type="checkbox" name="Sight" checked>
+					Гора-Колокол
+				</label>
+				<label>
+					<input class="form-review__sight" type="checkbox" name="Sight" checked>
+					Слайд-парк
+				</label>
+				<label>
+					<input class="form-review__sight" type="checkbox" name="Sight">
+					Красные скалы
+				</label>
+			</div>
+			<div class="form-review__cell">
+				<h2>Опишите свои эмоции:</h2>
+				<label>
+					<textarea class="form-review__emotion" placeholder="Опишите подробно все свои восторги"></textarea>
+				</label>
+			</div>
+			<button class="form-review__button" type="submit">Отправить отзыв</button>
+		</form>
+	</main>
+
+	<footer class="page-footer">
+	<div class="footer-hash">
+		<h2>#Visitsedona</h2>
+	</div>
+	<div class="footer-social">
+		<a class="footer-social__botton" href="#"><img src="img/svg/twitter.svg" alt="Twitter"></a>
+		<a class="footer-social__botton" href="#"><img src="img/svg/facebook.svg" alt="Facebook"></a>
+		<a class="footer-social__botton" href="#"><img src="img/svg/youtube.svg" alt="Youtube"></a>
+	</div>
+	<div class="footer-develop">
+		<p>Разработано</p>
+	</div>
+</footer>
+
+	<section class="popup-failure visualy-hidden">
+		<h2>Что-то пошло не так!</h2>
+		<p>Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить</p>
+		<button class="popup-failure__button">Ок</button>
+	</section>
+	
+	<section class="popup-success visualy-hidden">
+		<h2>Ваш отзыв отправлен!</h2>
+		<p>Спасибо за Ваше участие, Ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+		<button class="popup-success__button">Закрыть окно</button>
+	</section>
+</body>
